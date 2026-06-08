@@ -322,7 +322,7 @@ a {
     width: 100%;
     aspect-ratio: 1 / 1; 
     object-fit: cover; 
-    border-radius: 20px;
+    border-radius: 200px;
     border: 2px solid var(--border);
     transition: transform var(--transition), opacity var(--transition);
 }
@@ -681,7 +681,7 @@ a {
 }
 
 .footer-content p {
-    color: var(--text-muted);
+    color: white;
     font-size: 14px;
     line-height: 1.8;
 }
@@ -704,7 +704,7 @@ a {
 .footer-socials a {
     width: 44px;
     height: 44px;
-    border: 2px solid var(--border);
+    border: 2px solid var(--text-muted);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -761,7 +761,7 @@ body.light-mode .project-card {
 body.light-mode .contact-form input,
 body.light-mode .contact-form textarea {
     background: rgba(226, 232, 240, 0.6);
-    border-color: rgba(99, 102, 241, 0.2);
+    border-color: rgba(44, 45, 65, 0.2);
 }
 
 body.light-mode .image-hover-card {
@@ -769,15 +769,15 @@ body.light-mode .image-hover-card {
 }
 
 body.light-mode footer{
-    background: linear-gradient(135deg, rgba(6, 108, 124, 0.479)), rgba(46, 56, 58, 0.911); 
+    background: linear-gradient(135deg, rgba(3, 49, 56, 0.788)), rgba(46, 56, 58, 0.911); 
 }
 
-
+body.light-mode footer .container h4,
+body light-mode footer .container p{
+    color: white;
+}
 
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
 
     .nav-menu {
         display: none;

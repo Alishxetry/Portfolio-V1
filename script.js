@@ -17,16 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('theme') === 'light') setTheme('light');
 });
 
-const navMenu = document.getElementById('navMenu');
-
-document.getElementById('menuToggle').addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
-
-navMenu.addEventListener('click', (e) => {
-    if (e.target.tagName === 'A') navMenu.classList.remove('active');
-});
-
 const typingSpan = document.querySelector('.typing');
 const words = ['Pratik Sapkota', 'a Developer', 'a Designer'];
 let wordIdx = 0, charIdx = 0, isDeleting = false;
